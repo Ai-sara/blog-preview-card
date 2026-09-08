@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-main: hsl(47, 88%, 63%);
+
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+
+    --font-family: 'Figtree', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: var(--font-family);
+    min-height: 100vh;
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-gray-950);
+}
+.container{
+    padding: 24px;
+}
+.blog__card{
+    width: 100%;
+    max-width: 384px;
+    background-color: var(--color-white);
+    padding: 24px;
+    border: 1px solid var(--color-gray-950);
+    border-radius: 20px;
+    display: grid;
+    row-gap: 24px;
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+.blog__data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: flex-start;
+}
+
+.blog__image{
+    border-radius: 10px;
+}
+.blog__tag,
+.blog__date,
+.blog__name{
+    font-size: 14px;
+}
+
+.blog__tag{
+    display: inline-block;
+    font-weight: 700;
+    background-color: var(--color-main);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.blog__title{
+    font-size: 24px;
+    font-weight: 900;
+}
+.blog__title:hover{
+    color: var(--color-main);
+}
+
+.blog__description{
+    font-size: 16px;
+    color: var(--color-gray-500);
+}
+
+.blog__author{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.blog__name{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+    .blog__card{
+        max-width: 315px;
+        padding: 16px;
+    }
+    .blog__tag,
+    .blog__date,
+    .blog__name{
+        font-size: 12px;
+    }
+
+    .blog__title{
+        font-size: 20px;
+    }
+
+    .blog__description{
+        font-size: 14px;
+    }
+}
