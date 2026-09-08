@@ -8,7 +8,7 @@ A responsive blog preview card built as a solution to the [Frontend Mentor](http
 
 ## Live Demo
 
-[View Live Site](ССЫЛКА)
+[View Live Site](https://blog-preview-card-001.vercel.app/)
 
 ## Built With
 

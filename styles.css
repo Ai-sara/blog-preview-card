@@ -91,6 +91,7 @@ body{
 }
 .blog__title:hover{
     color: var(--color-main);
+    cursor: pointer;
 }
 
 .blog__description{
